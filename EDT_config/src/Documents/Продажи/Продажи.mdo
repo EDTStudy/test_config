@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94882ae6-0560-4dde-830a-70ebda2e8e84">
+  <producedTypes>
+    <objectType typeId="2fd2f529-8975-469d-9609-b43eeb620ca7" valueTypeId="c2c755dd-1023-4fd6-b147-c7ed2da493c2"/>
+    <refType typeId="5abb28e0-ec4d-4061-bd5b-465a1fa9388c" valueTypeId="49f5980c-60ee-4c89-8e81-46244e152fd5"/>
+    <selectionType typeId="4710b19a-5c28-4085-8b3a-0aa2342e3d1f" valueTypeId="6ad2a7c5-3dd8-4b72-af4b-ced549fe04d2"/>
+    <listType typeId="6c9f8da5-308c-4508-b974-58a20be36dbd" valueTypeId="4046e2f8-d5c3-4cef-9815-2af86a18315b"/>
+    <managerType typeId="69fc5e55-3706-4329-a713-e821aec9b48e" valueTypeId="921938c0-61de-42fc-bb32-f643e5011e58"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Продажи.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Продажи.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="06dcaddf-bed3-4bce-8b4d-3c8dec09d144">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ff9f4fa4-b032-4141-9246-063bfbc5685e">
+    <producedTypes>
+      <objectType typeId="336bc670-eedc-4bd8-8333-5381343fcf80" valueTypeId="735d0d20-006a-402b-a4c9-48cea6fc30d3"/>
+      <rowType typeId="6c14c5e2-f22c-4cc2-ae5e-bcd343f9e63a" valueTypeId="1e896d0a-45a1-4699-86f6-bde928ccbfa8"/>
+    </producedTypes>
+    <name>ТЧ_Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧ товары</value>
+    </synonym>
+    <attributes uuid="a509e4e4-ece7-4b9c-9979-7c6db73ae747">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d8ba469e-5387-4999-b7a9-6744fac8461b">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3d69bdbd-c57a-4c1b-b8b7-1a8fd8158796">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="699d02a6-e291-4522-a976-cca9d12d7a5d">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
